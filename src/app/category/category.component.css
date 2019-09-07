@@ -1,0 +1,7 @@
+.title-item {
+    color: white;
+}
+.title-item .active {
+    font-weight: bold !important;
+
+}

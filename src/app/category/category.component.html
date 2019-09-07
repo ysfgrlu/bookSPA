@@ -1,0 +1,27 @@
+<!-- <div class="list-group">
+    <a routerLink="/product" routerLinkActive="active" class="list-group-item list-group-item-action">
+        Tüm Kitaplar
+    </a>
+    <a *ngFor="let category of categories" routerLink="/products/{{category.id}}" routerLinkActive="active"
+        class="list-group-item list-group-item-action">
+        {{category.name}}
+    </a>
+</div> -->
+<table class="table">
+    <tbody>
+        <tr class="table-dark">
+            <td>&nbsp;</td>
+            <td scope="row">
+                    <a routerLink="/product" routerLinkActive="active" class="title-item active">
+                        <b>Tüm Kitaplar</b>
+                    </a>
+            </td>
+            <td *ngFor="let category of categories">
+                <a class="title-item active" routerLink="/products/{{category.id}}" routerLinkActive="active">
+                    {{category.name}}
+                </a>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
